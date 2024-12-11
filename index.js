@@ -27,7 +27,7 @@ async function scrapeReleaseInfo(url) {
 			
 			if (columns.length >= 7) {
 				const version = columns[0]?.innerText.trim();
-				const latestBuild = columns[4]?.innerText.trim();
+				const latestBuild = "10.0." + columns[4]?.innerText.trim();
 				const endOfServicingHomePro = columns[5]?.innerText.trim();
 				const endOfServicingEnterprise = columns[6]?.innerText.trim();
 
